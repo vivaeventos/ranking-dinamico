@@ -1,0 +1,70 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #FF6F00; /* Cinza mais escuro atrás dos gráficos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Moldura e título */
+.container {
+    border: 5px solid #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #2c2c2c; /* Laranja Viva atrás do modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Pista da corrida */
+.race-track {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo das barras */
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 0%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.03s linear;
+}
+
+.bar .name {
+    display: none; /* Oculto até o valor final ser atingido */
+    flex: 1;
+}
+
+.bar .value {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+/* Cores diferentes para cada competidor */
+#camila { background-color: #4caf50; }
+#marina { background-color: #ff9800; }
+#raphael { background-color: #f44336; }
+#carolyne { background-color: #2196f3; }
+#cesar { background-color: #9c27b0; }
+#millena { background-color: #009688; }
+#angelica { background-color: #ff5722; }
